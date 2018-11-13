@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Homework 3 Javier Ventura Psychic Game -->
+
 <head>
     <meta charset="UTF-8">
     <title>Psychic Game</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <!--Header-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-secondary">
-        <div class="col-md-4">
-            <h1 class="navbar-brand logo">Javier Ventura</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://jventura10.github.io/Bootstrap-Portfolio/index.html">About | </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://jventura10.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio | </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://jventura10.github.io/Bootstrap-Portfolio/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-    </nav>
-    <br>
-    <br>
 
     <!--Main Content-->
     <div class="container">
-        <div class="col-md-1">
+
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html">Javier Ventura</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="https://jventura10.github.io/portfolio/index.html">About</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="https://jventura10.github.io/portfolio/portfolio.html">Portfolio</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="https://jventura10.github.io/portfolio/contact.html">Contact</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- End of Row 1-->
         </div>
-        <div class="jumbotron col-md-11 mainCont border-secondary">
-            <h1 class="display-4 teal" style="float: left">Psychic Game!</h1>
-			<i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i>
-            <hr class="my-4">
-            <p>Guess what letter I'm thinking of </p>
-            <p id="wins">Wins: 0</p>
-            <p id="losses">Losses: 0</p>
-            <p id="numLeft">Guesses Left: 9</p>
-            <p id="usedLetters">Your Guesses So Far: </p>
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron mainCont border-secondary">
+                    <h1 class="display-4 teal" style="float: left">Psychic Game!</h1>
+                    <i class="fa fa-spinner fa-spin fa-3x" aria-hidden="true"></i>
+                    <hr class="my-4">
+                    <p>Guess what letter I'm thinking of </p>
+                    <p id="wins">Wins: 0</p>
+                    <p id="losses">Losses: 0</p>
+                    <p id="numLeft">Guesses Left: 9</p>
+                    <p id="usedLetters">Your Guesses So Far: </p>
+                </div>
+            </div>
         </div>
+
     </div>
     <br>
     <br>
     <br>
 
-    <!--Footer-->
-    <div class="fixed-bottom">
-        <div class="col-md-12 blueBar">
-        </div>
-        <div class="card-footer border-secondary customFooter ">
-            <p>Copyright &copy;</p>
-        </div>
-    </div>
-
-    <!-- Link to Game.js File -->
-    <script src="assets/javascript/game.js"></script>
-    
     <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- popper.js Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 
     <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+    <!-- Link to Game.js File -->
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
